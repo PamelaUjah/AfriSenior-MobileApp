@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/colorGray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_pic"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/my_profile_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_pic"
+                android:text="Profile Name"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLight"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+            android:id="@+id/my_profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_profile_fullname"
+            android:text="User Name"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight"
+            android:textSize="22sp"
+            />
+
+            <TextView
+                android:id="@+id/my_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_username"
+                android:layout_marginTop="5dp"
+                android:text="Hey there, I am Using AfriSenior."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/my_profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_status"
+                android:layout_marginTop="60dp"
+                android:text="Country"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLight"
+                android:textSize="21sp" />
+            <TextView
+                android:id="@+id/my_profile_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_country"
+                android:layout_marginTop="5dp"
+                android:text="Date Of Birth"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLight"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/my_profile_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_dob"
+                android:layout_marginTop="5dp"
+                android:text="Gender"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorLight"
+                android:textSize="21sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
